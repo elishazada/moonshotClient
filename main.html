@@ -1,8 +1,8 @@
-<div ng-init="loadQuestions()">
-    <p id="questionList">The list of questions are:</p>
-    <ul>
-        <li ng-repeat="question in questions">
-            <a href="#question/{{question.question_id}}">{{question.question_id}}. {{question.question_title}}</a>
+<div class="questions-container" ng-init="loadQuestions()">
+    <h1 class="questions-head">Here is some questions for you!</h1>
+    <ul class="questions-containerUL">
+        <li class="questions-containerLI" ng-repeat="question in questions">
+            <a class="questions-containerA" href="#question/{{question.question_id}}">{{question.question_id}}. {{question.question_title}}</a>
         </li>
     </ul>
 </div>
